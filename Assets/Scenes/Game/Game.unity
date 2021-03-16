@@ -123,6 +123,49 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &65230182
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 65230183}
+  - component: {fileID: 65230184}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &65230183
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65230182}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &65230184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65230182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6a5db987e4883347976c72c33c4ca30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &345281048
 GameObject:
   m_ObjectHideFlags: 0
@@ -138,9 +181,10 @@ GameObject:
   - component: {fileID: 345281052}
   - component: {fileID: 345281054}
   - component: {fileID: 345281055}
+  - component: {fileID: 345281056}
   m_Layer: 0
   m_Name: Player Ship
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -296,6 +340,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxFireCooldown: 0.2
+--- !u!114 &345281056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345281048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f62d72c299d1664f82cbb76cca5e919, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &806563558
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,6 +385,9 @@ MonoBehaviour:
   - tag: Player Bullet
     prefab: {fileID: 185217148385309637, guid: 455b696483ab0af4cb69eccf0b68de9a, type: 3}
     size: 20
+  - tag: Asteroid
+    prefab: {fileID: 1661906935667575284, guid: befc7c24ac78b6d4f9ca598142f53182, type: 3}
+    size: 35
 --- !u!4 &806563560
 Transform:
   m_ObjectHideFlags: 0
@@ -337,7 +396,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 806563558}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.957058, y: 22.056993, z: -130.26297}
+  m_LocalPosition: {x: 0, y: 0, z: -130.26297}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

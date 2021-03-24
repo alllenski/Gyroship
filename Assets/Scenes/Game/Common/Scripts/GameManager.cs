@@ -20,7 +20,11 @@ public class GameManager : MonoBehaviour
         spawnInterval += Time.deltaTime;
         if (spawnInterval > maxSpawnInterval)
         {
-            Spawn();
+            int spawnAmount = Random.Range(1, 4);
+            for (int i = 0; i < spawnAmount; i++)
+            {
+                Spawn();
+            }
             spawnInterval = 0;
         }
     }

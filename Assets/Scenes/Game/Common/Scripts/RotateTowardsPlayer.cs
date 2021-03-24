@@ -5,20 +5,20 @@ using UnityEngine;
 public class RotateTowardsPlayer : MonoBehaviour
 {
     
-    public float RotationSpeed;
+    public float rotationSpeed;
 
-    private Transform Target;
-    private Vector2 Direction;
+    private Transform target;
+    private Vector2 direction;
 
     void Start()
     {
-        Target = GameObject.Find("Player Ship").transform;
+        target = GameObject.Find("Player Ship").transform;
     }
 
     void FixedUpdate()
     {
-        Direction = Target.position - transform.position;
+        direction = target.position - transform.position;
 
-        transform.up = Vector2.Lerp((Vector2)transform.up, Direction, Time.deltaTime * RotationSpeed);
+        transform.up = Vector2.Lerp((Vector2)transform.up, direction, Time.deltaTime * rotationSpeed);
     }
 }

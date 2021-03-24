@@ -388,6 +388,9 @@ MonoBehaviour:
   - tag: Asteroid
     prefab: {fileID: 1661906935667575284, guid: befc7c24ac78b6d4f9ca598142f53182, type: 3}
     size: 35
+  - tag: Missile
+    prefab: {fileID: 5988753582720713902, guid: ccdd8137ae23a2442959fa49997c50d4, type: 3}
+    size: 35
 --- !u!4 &806563560
 Transform:
   m_ObjectHideFlags: 0

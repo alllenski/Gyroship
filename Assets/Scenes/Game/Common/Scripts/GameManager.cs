@@ -5,6 +5,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     private ObjectPooler objectPooler;
+
+    private string[] enemyPools = {"Asteroid", "Missile"};
     private float maxSpawnInterval = 4;
     private float spawnInterval = 0;
     
@@ -34,6 +36,6 @@ public class GameManager : MonoBehaviour
         {
             position.x = 180f;
         }
-        objectPooler.SpawnFromPool("Asteroid", position, Quaternion.identity);
+        objectPooler.SpawnFromPool(enemyPools[Random.Range(0, enemyPools.Length)], position, Quaternion.identity);
     }
 }

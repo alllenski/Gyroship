@@ -182,7 +182,8 @@ GameObject:
   - component: {fileID: 345281054}
   - component: {fileID: 345281055}
   - component: {fileID: 345281056}
-  m_Layer: 0
+  - component: {fileID: 345281057}
+  m_Layer: 3
   m_Name: Player Ship
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -352,6 +353,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f62d72c299d1664f82cbb76cca5e919, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &345281057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345281048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12119e18445168d469bd5edef426842e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitpoints: 5
+  damage: 50
 --- !u!1 &806563558
 GameObject:
   m_ObjectHideFlags: 0
@@ -391,6 +406,12 @@ MonoBehaviour:
   - tag: Missile
     prefab: {fileID: 5988753582720713902, guid: ccdd8137ae23a2442959fa49997c50d4, type: 3}
     size: 35
+  - tag: Enemy Bullet
+    prefab: {fileID: 5880436429243259617, guid: e3a86af056db0e24e9d30f06c1e47f94, type: 3}
+    size: 200
+  - tag: Hunter
+    prefab: {fileID: 769249531861174229, guid: 1d25612434b9b034090c483f6e53ba99, type: 3}
+    size: 10
 --- !u!4 &806563560
 Transform:
   m_ObjectHideFlags: 0

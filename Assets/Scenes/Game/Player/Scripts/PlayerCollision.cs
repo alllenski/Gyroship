@@ -8,7 +8,7 @@ public class PlayerCollision : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            gameObject.SetActive(false);
+            collision.gameObject.GetComponent<EntityStats>().Hurt(gameObject.GetComponent<EntityStats>().damage);
         }
     }
 }

@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     private ObjectPooler objectPooler;
 
-    private string[] enemyPools = {"Asteroid", "Missile"};
+    private string[] enemyPools = {"Asteroid", "Missile", "Hunter"};
     private float maxSpawnInterval = 4;
     private float spawnInterval = 0;
     

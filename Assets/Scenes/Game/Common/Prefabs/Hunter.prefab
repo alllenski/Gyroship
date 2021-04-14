@@ -199,12 +199,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78e9478e9cada0a47a731ef5f63a8377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPooler: {fileID: 0}
   huntingSpeed: 60
   lookingSpeed: 20
   huntingTurnSpeed: 0.0002
   lookingTurnSpeed: 0.05
-  maxFireCooldown: 0
   bullet: {fileID: 5880436429243259617, guid: e3a86af056db0e24e9d30f06c1e47f94, type: 3}
 --- !u!114 &769249531861174191
 MonoBehaviour:
@@ -218,5 +216,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12119e18445168d469bd5edef426842e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 3
+  hitpoints: 1
   damage: 1
+  healthDrop: {fileID: 971420545094719295, guid: 06942d63c137b394abb5eafef508a391, type: 3}

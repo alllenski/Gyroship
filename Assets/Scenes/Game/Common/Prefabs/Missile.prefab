@@ -200,3 +200,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitpoints: 1
   damage: 1
+  healthDrop: {fileID: 971420545094719295, guid: 06942d63c137b394abb5eafef508a391, type: 3}

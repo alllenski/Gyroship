@@ -32,6 +32,18 @@ TextureImporter:
   - first:
       213: -5599750456436461424
     second: Enemy Bullet
+  - first:
+      213: -7450669156800766785
+    second: Healthbar
+  - first:
+      213: -4272707242783423304
+    second: Target
+  - first:
+      213: 1726203059708922746
+    second: Target Lock
+  - first:
+      213: 3628468241054914511
+    second: HealthDrop
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -342,7 +354,7 @@ TextureImporter:
         width: 2
         height: 2
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -350,6 +362,90 @@ TextureImporter:
       bones: []
       spriteID: 090f54de0a0b942b0800000000000000
       internalID: -5599750456436461424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Healthbar
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 65
+        width: 4
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbc5ee190e7e99890800000000000000
+      internalID: -7450669156800766785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Target
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4c7a4866b44b4c0800000000000000
+      internalID: -4272707242783423304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Target Lock
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7b84287984b4f710800000000000000
+      internalID: 1726203059708922746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthDrop
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 178
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc75dda04a8ea5230800000000000000
+      internalID: 3628468241054914511
       vertices: []
       indices: 
       edges: []

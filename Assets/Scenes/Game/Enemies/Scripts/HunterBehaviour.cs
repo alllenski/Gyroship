@@ -11,12 +11,10 @@ public class HunterBehaviour : MonoBehaviour
     public float lookingSpeed;
     public float huntingTurnSpeed;
     public float lookingTurnSpeed;
-    public float maxFireCooldown;
 
     public GameObject bullet;
 
     private bool hunting = false;   
-    private float fireCooldown;
     private RaycastHit2D hit;
 
     void Start()
@@ -39,7 +37,7 @@ public class HunterBehaviour : MonoBehaviour
 
     IEnumerator Hunt()
     {
-        StartCoroutine(Burst());
+        objectPooler.SpawnFromPool("Enemy Bullet", transform.position, transform.rotation);
         hunting = true;
         GetComponent<MoveForward>().speed = huntingSpeed;
         GetComponent<RotateTowardsPlayer>().rotationSpeed = huntingTurnSpeed;
@@ -49,13 +47,4 @@ public class HunterBehaviour : MonoBehaviour
         GetComponent<RotateTowardsPlayer>().rotationSpeed = lookingTurnSpeed;
     }
 
-    IEnumerator Burst()
-    {
-        objectPooler.SpawnFromPool("Enemy Bullet", transform.position, transform.rotation);
-        yield return new WaitForSeconds(0.1f);
-        objectPooler.SpawnFromPool("Enemy Bullet", transform.position, transform.rotation);
-        yield return new WaitForSeconds(0.1f);
-        objectPooler.SpawnFromPool("Enemy Bullet", transform.position, transform.rotation);
-        yield return new WaitForSeconds(0.1f);
-    }
 }

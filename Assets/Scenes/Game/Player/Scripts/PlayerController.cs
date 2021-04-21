@@ -52,6 +52,10 @@ public class PlayerController : MonoBehaviour
         {
             float tilt = Input.acceleration.x; 
             rb2d.rotation += rotationAmount * -tilt;
+            if (Input.acceleration.y > 1 || Input.acceleration.y < 1)
+            {
+                StartCoroutine(Boost());
+            }
         }
         else 
         {
@@ -63,6 +67,10 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKey(KeyCode.RightArrow))
             {
                 rb2d.rotation -= rotationAmount;
+            }
+            if (Input.GetKey(KeyCode.Space) && boosting == false)
+            {
+                StartCoroutine(Boost());
             }
         }
         

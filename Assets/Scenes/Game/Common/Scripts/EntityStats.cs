@@ -15,7 +15,7 @@ public class EntityStats : MonoBehaviour
         hitpoints -= damage;
         if (hitpoints <= 0)
         {
-            if (gameObject.tag == "Enemy")
+            if (gameObject.tag == "Enemy" && healthDrop != null)
             {
                 int randomNumber = Random.Range(0, 3);
                 if (randomNumber == 2)

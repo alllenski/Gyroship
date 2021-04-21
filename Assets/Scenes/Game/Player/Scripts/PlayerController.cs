@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
         {
             float tilt = Input.acceleration.x; 
             rb2d.rotation += rotationAmount * -tilt;
-            if (Input.acceleration.y > 1 || Input.acceleration.y < 1)
+            if (Input.acceleration.y > 1 || Input.acceleration.y < -1)
             {
                 StartCoroutine(Boost());
             }
